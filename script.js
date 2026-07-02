@@ -54,7 +54,7 @@ const translations = {
     "hl-1-title": "Academic Leader",
     "hl-1-desc":  "Head of English Department · BA with 92% Distinction · Pursuing MA in TEFL",
     "hl-2-title": "Development Professional",
-    "hl-2-desc":  "MEAL · Edu · CM · TT · CALL",
+    "hl-2-desc":  "ّFull-Stack · MEAL · Edu · CM · TT · CALL",
     "hl-3-title": "Researcher & Writer",
     "hl-3-desc":  "Published essay on Afghan student resilience · Research Methodology trained",
 
@@ -256,7 +256,7 @@ const translations = {
     "hl-1-title": "رهبر آکادمیک",
     "hl-1-desc":  "آمر دیپارتمنت انگلیسی · لیسانس با نمره ممتاز ۹۲٪ · در حال تحصیل MA در TEFL",
     "hl-2-title": "متخصص توسعه",
-    "hl-2-desc":  "MEAL · Edu · CM · TT · CALL",
+    "hl-2-desc":  "Full-Stack · MEAL · Edu · CM · TT · CALL",
     "hl-3-title": "پژوهشگر و نویسنده",
     "hl-3-desc":  "مقاله منتشره درباره تاب‌آوری دانش‌آموزان افغان · آموزش روش‌شناسی تحقیق",
     "proj-label": "کارها",

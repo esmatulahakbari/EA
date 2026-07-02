@@ -69,6 +69,9 @@ const translations = {
     "project-2-title":  "Akbari Safe Test",
     "project-2-desc":   "A web platform for conducting safe and secure tests.",
     "project-link-soon":"View Project",
+    "project-3-title":  "EM-survey",
+    "project-3-desc":   "Professional Surveys' Platform - Made Simple - Build academic, market research, employee evaluation, and any kind of survey.",
+    "project-link-soon":"View Project",
 
     /* Hobbies */
     "hobbies-label": "Personal",
@@ -265,6 +268,9 @@ const translations = {
     "project-link":    "مشاهده پروژه",
     "project-2-title": "سامانه آزمون امن اکبری",
     "project-2-desc":  "پلتفرم وب برای برگزاری آزمون‌های امن و مطمئن.",
+    "project-link-soon": "مشاهده پروژه",
+    "project-3-title": "ام سروی",
+    "project-3-desc": "یک پلتفرم حرفه‌ای برای طراحی و مدیریت نظرسنجی‌های علمی، تحقیقات بازار، ارزیابی کارکنان و انواع دیگر نظرسنجی‌ها.",
     "project-link-soon": "مشاهده پروژه",
     "hobbies-label": "شخصی",
     hobbies:         "سرگرمی‌ها و علایق",

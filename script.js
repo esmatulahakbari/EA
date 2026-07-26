@@ -30,7 +30,7 @@ const translations = {
     "nav-contact":      "Contact",
 
     /* Hero */
-    "hero-eyebrow": "Educator · Researcher · Writer",
+    "hero-eyebrow": "Educator · Researcher · Writer · Developer",
     "hero-text":    "University Lecturer, EFL Teacher, Development Professional & Researcher based in Herat, Afghanistan — bridging education, technology, and community development.",
     "view-resume":  "View Resume",
     "tag-1": "MA in TEFL",
@@ -46,7 +46,7 @@ const translations = {
     /* About labels */
     "about-label": "About",
     about:         "About Esmatullah",
-    "about-1":     "Esmatullah Akbari is a dedicated university lecturer, EFL teacher, and development professional based in Herat, Afghanistan. With a Bachelor of Arts in English Language & Literature from Herat University (graduating with a 92% distinction) and currently advancing toward a Master's in Teaching English as a Foreign Language (TEFL), he has built a distinguished career at the intersection of education, research, and humanitarian work.",
+    "about-1":     "Esmatullah Akbari is a dedicated university lecturer, EFL teacher, and full stack developer based in Herat, Afghanistan. With a Bachelor of Arts in English Language & Literature from Herat University (graduating with a 92% distinction) and currently advancing toward a Master's in Teaching English as a Foreign Language (TEFL), he has built a distinguished career at the intersection of education, research, and humanitarian work.",
     "about-2":     "As Head of the English Department at Woman Online University (WOU), Esmatullah has led academic strategy, oversaw faculty development, and championed access to quality education. Alongside this, he has served as a Field Monitor for IWA-USAID, a Communication Officer, and a Research Officer — applying rigorous MEAL frameworks and data collection methods to real-world development challenges.",
     "about-3":     "A skilled writer and curriculum designer, Esmatullah brings multilingual fluency (English, Persian, and Pashto) and technical expertise in web development to every endeavor. His life's work is making a lasting positive impact through education, research, and community empowerment.",
 
@@ -212,7 +212,7 @@ const translations = {
     "contact-label":         "Reach Out",
     "contact-title":         "Get in Touch",
     "contact-intro":         "Whether for collaboration, academic partnership, or professional opportunities — Esmatullah is open to connecting.",
-    "contact-role":          "University Lecturer · EFL Teacher · Researcher",
+    "contact-role":          "University Lecturer · EFL Teacher · Researcher · Developer",
     "contact-email-label":   "Email",
     "contact-phone-label":   "Phone",
     "contact-address-label": "Location",
@@ -231,7 +231,7 @@ const translations = {
     "form-error":            "Failed to send message. Please try again.",
 
     /* Footer */
-    "footer-tagline": "Educator · Researcher · Writer",
+    "footer-tagline": "Educator · Researcher · Writer · Developer",
     footer:           "© 2025-2026 Esmatullah Akbari. All rights reserved.",
   },
 
@@ -247,7 +247,7 @@ const translations = {
     "nav-skills":       "مهارت‌ها",
     "nav-certificates": "گواهینامه‌ها",
     "nav-contact":      "تماس",
-    "hero-eyebrow": "مدرس · پژوهشگر · نویسنده",
+    "hero-eyebrow": "توسعه دهنده سایت · مدرس · پژوهشگر · نویسنده",
     "hero-text":    "استاد دانشگاه، معلم EFL، متخصص توسعه و پژوهشگر مستقر در هرات، افغانستان — پیوند دهنده آموزش، فناوری و توسعه اجتماعی.",
     "view-resume":  "مشاهده رزومه",
     "tag-1": "MA در TEFL",
@@ -411,7 +411,7 @@ const translations = {
     "contact-label":         "ارتباط",
     "contact-title":         "تماس بگیرید",
     "contact-intro":         "برای همکاری، مشارکت آکادمیک یا فرصت‌های حرفه‌ای، عصمت‌الله آماده ارتباط است.",
-    "contact-role":          "استاد دانشگاه · معلم EFL · پژوهشگر",
+    "contact-role":          "استاد دانشگاه · معلم EFL · پژوهشگر · توسعه دهنده سایت",
     "contact-email-label":   "ایمیل",
     "contact-phone-label":   "تلفن",
     "contact-address-label": "مکان",
@@ -428,7 +428,7 @@ const translations = {
     "form-err-email":        "لطفاً یک آدرس ایمیل معتبر وارد کنید.",
     "form-success":          "پیام با موفقیت ارسال شد! متشکرم.",
     "form-error":            "ارسال پیام ناموفق بود. لطفاً دوباره تلاش کنید.",
-    "footer-tagline": "مدرس · پژوهشگر · نویسنده",
+    "footer-tagline": "توسعه دهنده سایت · مدرس · پژوهشگر · نویسنده",
     footer:           "© ۱۴۰۵-۱۴۰۴ عصمت‌الله اکبری. تمامی حقوق محفوظ است.",
   }
 };

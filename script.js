@@ -75,8 +75,11 @@ const translations = {
      "project-4-title":  "ResumeForge",
     "project-4-desc":   "Professional Resume Maker Platform",
     "project-link-soon":"View Project",
-     "project-5-title":  "Academic Course Generator",
+    "project-5-title":  "Academic Course Generator",
     "project-5-desc":   "Professional Academic Course Generator Platform - For University Professors",
+    "project-link-soon":"View Project",
+    "project-6-title":  "Faculy Administration",
+    "project-6-desc":   "Professional Faculty Administration Platform",
     "project-link-soon":"View Project",
 
     /* Hobbies */
@@ -283,6 +286,9 @@ const translations = {
     "project-link-soon": "مشاهده پروژه",
     "project-5-title": "سازنده دوره‌های دانشگاهی",
     "project-5-desc": "پلتفرم هوشمند طراحی و تولید دوره‌های آموزشی برای استادان دانشگاه.",
+    "project-link-soon": "مشاهده پروژه",
+    "project-6-title": "سامانه مدیریت دانشکده",
+    "project-6-desc": "سامانه حرفه‌ای مدیریت امور اداری و آموزشی دانشکده.",
     "project-link-soon": "مشاهده پروژه",
     "hobbies-label": "شخصی",
     hobbies:         "سرگرمی‌ها و علایق",

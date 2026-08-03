@@ -81,6 +81,9 @@ const translations = {
     "project-6-title":  "Faculy Administration",
     "project-6-desc":   "Professional Faculty Administration Platform",
     "project-link-soon":"View Project",
+    "project-7-title":  "Speaking Platform",
+    "project-7-desc":   "A full speaking assessment — confidence, fluency, vocabulary, grammar, pronunciation, listening, and interaction — that turns into a personalized weekly practice plan, not just a level label.",
+    "project-link-soon":"View Project",
 
     /* Hobbies */
     "hobbies-label": "Personal",
@@ -295,6 +298,9 @@ const translations = {
     "project-link-soon": "مشاهده پروژه",
     "project-6-title": "سامانه مدیریت دانشکده",
     "project-6-desc": "سامانه حرفه‌ای مدیریت امور اداری و آموزشی دانشکده.",
+    "project-link-soon": "مشاهده پروژه",
+    "project-7-title": "پلتفرم ارزیابی مهارت گفتاری",
+    "project-7-desc": "یک سامانه جامع ارزیابی مهارت گفتاری که اعتمادبه‌نفس، روانی گفتار، دایره واژگان، دستور زبان، تلفظ، مهارت شنیداری و تعامل را تحلیل کرده و به‌جای ارائه یک سطح ساده، برنامه‌ای شخصی‌سازی‌شده برای تمرین هفتگی ارائه می‌دهد.",
     "project-link-soon": "مشاهده پروژه",
     "hobbies-label": "شخصی",
     hobbies:         "سرگرمی‌ها و علایق",

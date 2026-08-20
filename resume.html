@@ -13,8 +13,100 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
+  <style>
+    /* --- Password gate styles --- */
+    #pw-gate-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #0f1115;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: 'Sora', sans-serif;
+    }
+    #pw-gate-box {
+      background: #1a1d24;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 36px 32px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    #pw-gate-box i.fa-lock {
+      font-size: 28px;
+      color: #8b8fff;
+      margin-bottom: 14px;
+    }
+    #pw-gate-box h2 {
+      color: #f2f2f5;
+      font-size: 18px;
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+    #pw-gate-box p {
+      color: #9a9ea8;
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+    #pw-gate-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: #0f1115;
+      color: #f2f2f5;
+      font-size: 14px;
+      margin-bottom: 12px;
+      outline: none;
+      direction: ltr;
+    }
+    #pw-gate-input:focus {
+      border-color: #8b8fff;
+    }
+    #pw-gate-submit {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: none;
+      background: #6366f1;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #pw-gate-submit:hover {
+      background: #4f46e5;
+    }
+    #pw-gate-error {
+      color: #f87171;
+      font-size: 12px;
+      margin-top: 10px;
+      min-height: 16px;
+    }
+    body.pw-locked > *:not(#pw-gate-overlay) {
+      display: none !important;
+    }
+  </style>
 </head>
-<body>
+<body class="pw-locked">
+
+  <!-- Password gate overlay -->
+  <div id="pw-gate-overlay">
+    <div id="pw-gate-box">
+      <i class="fas fa-lock"></i>
+      <h2>Protected Page</h2>
+      <p>Please enter the password to view this resume.</p>
+      <input type="password" id="pw-gate-input" placeholder="Password" autocomplete="off">
+      <button id="pw-gate-submit">Unlock</button>
+      <div id="pw-gate-error"></div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="header-inner">
@@ -257,5 +349,47 @@
 
   <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   <script src="./script.js"></script>
+
+  <!-- Password gate logic -->
+  <script>
+    (function () {
+      var CORRECT_PASSWORD = "Akbari#013520@";
+      var SESSION_KEY = "resume_pw_unlocked";
+
+      var input = document.getElementById('pw-gate-input');
+      var submitBtn = document.getElementById('pw-gate-submit');
+      var errorEl = document.getElementById('pw-gate-error');
+      var overlay = document.getElementById('pw-gate-overlay');
+
+      function unlock() {
+        document.body.classList.remove('pw-locked');
+        overlay.style.display = 'none';
+        try { sessionStorage.setItem(SESSION_KEY, '1'); } catch (e) {}
+      }
+
+      function tryUnlock() {
+        if (input.value === CORRECT_PASSWORD) {
+          unlock();
+        } else {
+          errorEl.textContent = 'رمز اشتباه است. دوباره تلاش کنید.';
+          input.value = '';
+          input.focus();
+        }
+      }
+
+      // Already unlocked earlier in this browser session
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) === '1') {
+          unlock();
+        }
+      } catch (e) {}
+
+      submitBtn.addEventListener('click', tryUnlock);
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') tryUnlock();
+      });
+      input.focus();
+    })();
+  </script>
 </body>
 </html>
